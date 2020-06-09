@@ -1,1 +1,0 @@
-scalac -bootclasspath /Users/ming-yuanlu/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.2/scala-library-2.13.2.jar -classpath /Users/ming-yuanlu/Documents/smart_401k_calculator/constants/target/scala-2.13/classes /Users/ming-yuanlu/Documents/smart_401k_calculator/constants/src/main/scala/constants.scala
