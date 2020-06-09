@@ -1,7 +1,7 @@
 # Smart 401k Calculator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[My badge](https://img.shields.io/badge/Ming--Yuan-Lu-success)
+![My badge](https://img.shields.io/badge/Ming--Yuan-Lu-success)
 
 Ever wondered whether a traditional or Roth 401k account is more valuable to you? Here they are compared in 10->20->30->40 years time to give you an idea which account works best for you.
 
@@ -9,9 +9,9 @@ Ever wondered whether a traditional or Roth 401k account is more valuable to you
 
 To build from source, you need
 
-[Scala](https://www.scala-lang.org/) 2.13.2+
-[Sbt](https://www.scala-sbt.org/) 1.3.10+
-[ScalaTest](https://www.scalatest.org/) 3/1/2+
+[Scala](https://www.scala-lang.org/) 2.13.2+  
+[Sbt](https://www.scala-sbt.org/) 1.3.10+  
+[ScalaTest](https://www.scalatest.org/) 3/1/2+  
 
 ## Usage
 
