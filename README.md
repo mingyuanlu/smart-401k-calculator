@@ -11,12 +11,12 @@ To build from source, you need
 
 [Scala](https://www.scala-lang.org/) 2.13.2+  
 [Sbt](https://www.scala-sbt.org/) 1.3.10+  
-[ScalaTest](https://www.scalatest.org/) 3/1/2+  
+[ScalaTest](https://www.scalatest.org/) 3.1.2+  
 
 ## Usage
 
 ### Run with Compiled Executable
-Download the `zip` file from the release page. Decompress, and execute the compiled artifact in `bin` as
+Download the `zip` file from the [release page](https://github.com/mingyuanlu/smart-401k-calculator/releases/tag/v1.0.0). Decompress, and execute the compiled artifact in `bin` as
 ```
 $ ./smart401kcalculator
 Annual income ($, default $57,000):
