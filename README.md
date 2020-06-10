@@ -91,6 +91,28 @@ Roth        401k Account:  Cash now + 401k Amount in N years
 
 You can get your effective tax rate [here](https://smartasset.com/taxes/income-taxes)
 
+
+## Calculation Method
+
+The application asks the user to provide the following information:
+1. Income _S_
+2. Contribution _C_
+3. Tax rate now _t_ (differs depending on the account type, ie Roth or not)
+4. Tax rate at retirement _r_
+5. Interest rate _e_
+6. Inflation rate _f_
+   
+So we can calculate the account value in _n_ years and the take-home cash now as
+
+- Traditional account
+  - Account value = C * \[((1+e)*(1-f))^n\] * (1-r)
+  - Take-home cash = (S-C) * (1-t)
+
+- Roth account
+  - Account value = C * ((1+e)*(1-f))^n
+  - Take-home cash = (S-C/(1-t)) * (1-t) = S * (1-t) - C
+
+
 ## License 
 
 [MIT](https://github.com/mingyuanlu/smart-401k-calculator/blob/master/LICENSE) License
