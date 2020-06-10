@@ -7,7 +7,10 @@ Ever wondered whether a traditional or Roth 401k account is more valuable to you
 
 ## Requirements
 
-To build from source, you need
+To run the application with the compiled executable, you need
+[Java 8](https://www.java.com/en/download/)
+
+To build from source, you further need
 
 [Scala](https://www.scala-lang.org/) 2.13.2+  
 [Sbt](https://www.scala-sbt.org/) 1.3.10+  
