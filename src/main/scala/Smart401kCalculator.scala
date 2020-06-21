@@ -20,6 +20,7 @@ import exceptions._
 import constants._
 import util._
 import AccountType._
+import scala.util.{Try}
 
 /** Main function. Prints the comparison result to the console. Returns nothing. */
 object Smart401kCalculator extends App {
@@ -72,8 +73,15 @@ object Smart401kCalculator extends App {
    catch {
       case err:NumberFormatException => { if (err.getMessage() == "empty String"){ Constants.DefaultContribution } else throw new NumberFormatException }
    }
-   if(tempContribution > Constants.MaxContribution) println("Contribution larger than cap. Set to cap value $19,500...")
-   val contribution = if (tempContribution > Constants.MaxContribution) Constants.MaxContribution else tempContribution
+   //if(tempContribution > Constants.MaxContribution) println("Contribution larger than cap. Set to cap value $19,500...")
+   val contribution = 
+   Try(
+      require(tempContribution <= Constants.MaxContribution, "Contribution larger than cap. Set to cap value " + "$19,500...")
+    ).transform (
+      s => Try(tempContribution),
+      e => {println(e.getMessage); Try(Constants.MaxContribution)}
+    ).get
+   //val contribution = if (tempContribution > Constants.MaxContribution) Constants.MaxContribution else tempContribution
 
    //println(s"contribution: $contribution")
    /*
